@@ -1,0 +1,126 @@
+[
+  {
+    "name": "ocr_receipt",
+    "title": null,
+    "description": "OCR local input; save originals, previews and records. Hashes deduplicate reruns.",
+    "inputSchema": {
+      "properties": {
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "engine": {
+          "default": "rapidocr",
+          "title": "Engine",
+          "type": "string"
+        },
+        "recursive": {
+          "default": false,
+          "title": "Recursive",
+          "type": "boolean"
+        },
+        "preprocess": {
+          "default": true,
+          "title": "Preprocess",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "path"
+      ],
+      "title": "ocr_receiptArguments",
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null,
+    "execution": null
+  },
+  {
+    "name": "list_records",
+    "title": null,
+    "description": "Read records filtered by status, category, ISO date_from/date_to and duplicates.",
+    "inputSchema": {
+      "properties": {
+        "filters": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Filters"
+        }
+      },
+      "title": "list_recordsArguments",
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null,
+    "execution": null
+  },
+  {
+    "name": "update_record",
+    "title": null,
+    "description": "Write reviewed corrections and duplicate flags. Use decimal amount/tax and ISO date.",
+    "inputSchema": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "fields": {
+          "additionalProperties": true,
+          "title": "Fields",
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "fields"
+      ],
+      "title": "update_recordArguments",
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null,
+    "execution": null
+  },
+  {
+    "name": "export_records",
+    "title": null,
+    "description": "Write CSV, JSON or XLSX to a new local path. Existing files are never overwritten.",
+    "inputSchema": {
+      "properties": {
+        "format": {
+          "title": "Format",
+          "type": "string"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        }
+      },
+      "required": [
+        "format",
+        "path"
+      ],
+      "title": "export_recordsArguments",
+      "type": "object"
+    },
+    "outputSchema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null,
+    "execution": null
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "file": "receipt-01.png",
+    "date": "2026-01-01",
+    "amount": "41.50",
+    "vendor": "Example Cafe A",
+    "invoice_no": "EXAMPLE0001",
+    "variation": "clean"
+  },
+  {
+    "file": "receipt-02.png",
+    "date": "2026-01-02",
+    "amount": "58.50",
+    "vendor": "Example Transit B",
+    "invoice_no": "EXAMPLE0002",
+    "variation": "clean"
+  },
+  {
+    "file": "receipt-03.png",
+    "date": "2026-01-03",
+    "amount": "75.50",
+    "vendor": "Example Hotel C",
+    "invoice_no": "EXAMPLE0003",
+    "variation": "clean"
+  },
+  {
+    "file": "receipt-04.png",
+    "date": "2026-01-04",
+    "amount": "92.50",
+    "vendor": "Example Office D",
+    "invoice_no": "EXAMPLE0004",
+    "variation": "clean"
+  },
+  {
+    "file": "receipt-05.png",
+    "date": "2026-01-05",
+    "amount": "109.50",
+    "vendor": "Example Cafe E",
+    "invoice_no": "EXAMPLE0005",
+    "variation": "clean"
+  },
+  {
+    "file": "receipt-06.png",
+    "date": "2026-01-06",
+    "amount": "126.50",
+    "vendor": "Example Transit F",
+    "invoice_no": "EXAMPLE0006",
+    "variation": "clean"
+  },
+  {
+    "file": "receipt-07.png",
+    "date": "2026-01-07",
+    "amount": "143.50",
+    "vendor": "Example Hotel G",
+    "invoice_no": "EXAMPLE0007",
+    "variation": "rotated 90 degrees"
+  },
+  {
+    "file": "receipt-08.png",
+    "date": "2026-01-08",
+    "amount": "160.50",
+    "vendor": "Example Office H",
+    "invoice_no": "EXAMPLE0008",
+    "variation": "Gaussian blur 1.1"
+  },
+  {
+    "file": "receipt-09-text.pdf",
+    "date": "2026-01-09",
+    "amount": "177.50",
+    "vendor": "Example Cafe I",
+    "invoice_no": "EXAMPLE0009",
+    "variation": "PDF text layer"
+  },
+  {
+    "file": "receipt-10-scan.pdf",
+    "date": "2026-01-10",
+    "amount": "194.50",
+    "vendor": "Example Hotel J",
+    "invoice_no": "EXAMPLE0010",
+    "variation": "scanned PDF"
+  }
+]

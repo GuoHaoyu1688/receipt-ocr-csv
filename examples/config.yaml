@@ -1,0 +1,8 @@
+timezone: Asia/Shanghai
+low_confidence: 0.85
+max_file_mb: 50
+max_pages: 30
+max_pixels: 40000000
+tesseract_language: chi_sim+eng
+ocr_timeout: 120
+categories_file: categories.yaml

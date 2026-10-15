@@ -1,0 +1,23 @@
+{
+  "tests": 16,
+  "coverage_percent": 90,
+  "cli_seconds": {
+    "list": 0.1155,
+    "show": 0.089
+  },
+  "mcp": {
+    "tools_tested": 4,
+    "real_sdk_stdio": true
+  },
+  "web": {
+    "field_source_highlight": true,
+    "edited_total": "42.50",
+    "export_verified": true,
+    "mobile_width": 390,
+    "mobile_scroll_width": 390,
+    "mobile_detail_width": 324,
+    "mobile_source_width": 324,
+    "mobile_image_width": 322,
+    "screenshots_visually_reviewed": true
+  }
+}

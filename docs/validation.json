@@ -1,0 +1,102 @@
+{
+  "python": "3.12.13",
+  "platform": "Darwin arm64",
+  "engine": "rapidocr-onnxruntime 1.4.4",
+  "samples": 10,
+  "seconds": 19.393,
+  "date_accuracy": 1.0,
+  "amount_accuracy": 1.0,
+  "fixtures": [
+    {
+      "file": "receipt-01.png",
+      "variation": "clean",
+      "date_correct": true,
+      "amount_correct": true,
+      "vendor_correct": true,
+      "engine": "rapidocr",
+      "rotation": 0
+    },
+    {
+      "file": "receipt-02.png",
+      "variation": "clean",
+      "date_correct": true,
+      "amount_correct": true,
+      "vendor_correct": true,
+      "engine": "rapidocr",
+      "rotation": 0
+    },
+    {
+      "file": "receipt-03.png",
+      "variation": "clean",
+      "date_correct": true,
+      "amount_correct": true,
+      "vendor_correct": true,
+      "engine": "rapidocr",
+      "rotation": 0
+    },
+    {
+      "file": "receipt-04.png",
+      "variation": "clean",
+      "date_correct": true,
+      "amount_correct": true,
+      "vendor_correct": true,
+      "engine": "rapidocr",
+      "rotation": 0
+    },
+    {
+      "file": "receipt-05.png",
+      "variation": "clean",
+      "date_correct": true,
+      "amount_correct": true,
+      "vendor_correct": true,
+      "engine": "rapidocr",
+      "rotation": 0
+    },
+    {
+      "file": "receipt-06.png",
+      "variation": "clean",
+      "date_correct": true,
+      "amount_correct": true,
+      "vendor_correct": true,
+      "engine": "rapidocr",
+      "rotation": 0
+    },
+    {
+      "file": "receipt-07.png",
+      "variation": "rotated 90 degrees",
+      "date_correct": true,
+      "amount_correct": true,
+      "vendor_correct": true,
+      "engine": "rapidocr",
+      "rotation": 90
+    },
+    {
+      "file": "receipt-08.png",
+      "variation": "Gaussian blur 1.1",
+      "date_correct": true,
+      "amount_correct": true,
+      "vendor_correct": true,
+      "engine": "rapidocr",
+      "rotation": 0
+    },
+    {
+      "file": "receipt-09-text.pdf",
+      "variation": "PDF text layer",
+      "date_correct": true,
+      "amount_correct": true,
+      "vendor_correct": true,
+      "engine": "pdf-text",
+      "rotation": 0
+    },
+    {
+      "file": "receipt-10-scan.pdf",
+      "variation": "scanned PDF",
+      "date_correct": true,
+      "amount_correct": true,
+      "vendor_correct": true,
+      "engine": "rapidocr",
+      "rotation": 0
+    }
+  ],
+  "scope": "Actual local OCR on ten generated fictional samples; not real-world accuracy."
+}

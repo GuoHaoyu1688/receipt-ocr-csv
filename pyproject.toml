@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "receipt-ocr-csv"
+version = "0.1.0"
+description = "Offline receipt OCR, field review and structured exports"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["rapidocr-onnxruntime>=1.4,<2", "Pillow>=10", "pdfplumber>=0.11,<0.12", "pypdfium2>=4.30,<6", "PyYAML>=6", "openpyxl>=3.1,<4", "mcp>=1.20,<2"]
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.11", "reportlab>=4", "qrcode>=8"]
+heic = ["pillow-heif>=0.20"]
+[project.scripts]
+rocr = "receipt_ocr_csv.cli:main"
+[tool.hatch.build.targets.wheel]
+packages = ["src/receipt_ocr_csv"]
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["ocr: actual bundled local ONNX inference", "system: optional system OCR engine"]
